@@ -10,6 +10,12 @@ variable "instance_name" {
   default = "tf-instance"
 }
 
+variable "image_name" {
+  description = "The image to be delpoyed on the instance"
+  type        = string
+  default     = "cos-cloud/cos-stable"
+}
+
 variable "machine_type" {
   description = "Machine type of the instance"
   type        = string

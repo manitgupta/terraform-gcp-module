@@ -5,3 +5,6 @@ provider "google" {
   zone    = var.zone
 }
 
+module "vpc_module_test" {
+  source = "./modules/vpc-test-module"
+}
